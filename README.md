@@ -49,11 +49,11 @@ Define how long should the plugin wait for activity? 2 minutes is default
 
 Set email recipient. yourUsername@localhost is default
 
-    /set email_mentions_to you@gmail.com
+    /set email_mentions_to_address you@gmail.com
 
 Set email sender. irssi@localhost is default
 
-    /set email_mentions_from irssi@example.net
+    /set email_mentions_from_address irssi@example.net
 
 
 Don't forget to save your config
