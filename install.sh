@@ -3,7 +3,7 @@
 $(perl -mMIME::Lite -e print \"MIME::Lite found\" 2> /dev/null)
 
 if [ $? -ne 0 ]; then
-  echo "Perl MIME::Lite not found. If you're on Debian try apt-get intsall libmime-lite-perl"
+  echo "Perl MIME::Lite not found. If you're on Debian try apt-get install libmime-lite-perl"
   exit 1
 fi
 
@@ -19,7 +19,7 @@ mkdir -p ~/.irssi/scripts/autorun
 OLDPW=$(pwd)
 
 cd ~/.irssi/scripts
-curl -s -O https://github.com/mlomnicki/irssi-email-mentions/master/email_mentions.pl
+curl -s -O https://raw.githubusercontent.com/mlomnicki/irssi-email-mentions/master/email_mentions.pl
 cd ~/.irssi/scripts/autorun
 ln -sf ../email_mentions.pl
 
